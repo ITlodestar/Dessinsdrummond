@@ -1,0 +1,40 @@
+/* ===================== PARTNERS ======================*/
+.partners-area {
+	padding-bottom: 50px
+}
+
+.partner-inn ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.partner-inn ul li {
+	margin-bottom: 50px;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 23%;
+	flex: 0 23%;
+	list-style: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+.partner-inn ul li img {
+	opacity: 0.3;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	-webkit-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s
+}
+
+.partner-inn ul li:hover img {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}

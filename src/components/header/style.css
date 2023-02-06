@@ -1,0 +1,380 @@
+/* ===================== HEADER ======================*/
+
+.header {
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	padding-right: 5%;
+}
+
+.header:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	content: "";
+	z-index: -1;
+}
+
+.header:before {
+	border-color: #B78D65 transparent;
+	border-style: solid;
+	border-width: 0 60px 100px;
+	content: "";
+	right: -700px;
+	position: absolute;
+	width: 1150px;
+	z-index: 1;
+}
+
+.header .container {
+	margin-left: 0
+}
+
+.header .col-lg-12 {
+	padding-left: 0
+}
+
+.header-inn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.site-logo a {
+	padding: 35px 25px;
+	background: #fff;
+	width: 195px;
+	display: inline-block;
+}
+
+.header-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative;
+	z-index: 11;
+}
+
+.mainmenu ul {
+	padding-left: 50px;
+}
+
+.mainmenu ul li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 20px;
+	position: relative
+}
+
+.mainmenu ul li a {
+	font-weight: 500;
+	color: #000;
+	text-transform: uppercase;
+	display: block;
+	padding: 38px 0;
+	position: relative;
+	background: -webkit-linear-gradient(left, #B78D65, #B78D65 50%, #000 50%);
+	background: linear-gradient(to right, #B78D65, #B78D65 50%, #000 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+}
+
+.mainmenu ul>li.active a:before {
+	position: absolute;
+	content: '';
+	background: #B78D65;
+	left: 50%;
+	bottom: 25px;
+	width: 25px;
+	height: 3px;
+	border-radius: 5px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.mainmenu ul li a:hover {
+	background-position: 0 100%;
+	border-color: #B78D65;
+}
+
+.mainmenu ul>li.active>a {
+	background-position: 0 100%;
+	border-color: #B78D65;
+}
+
+.mainmenu ul li ul {
+	position: absolute;
+	top: 120%;
+	left: 0;
+	width: 200px;
+	background: #fff;
+	padding: 0;
+	-webkit-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	visibility: hidden;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+
+.mainmenu ul li:hover ul {
+	visibility: visible;
+	top: 100%;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+
+.mainmenu ul li ul li {
+	margin: 0;
+	display: block;
+	border-top: 1px solid #eee
+}
+
+.mainmenu ul li ul li a {
+	display: block;
+	padding: 14px 20px;
+	text-transform: capitalize;
+	font-size: 15px
+}
+
+.header-btn {
+	display: inline-block;
+	padding: 16px 25px 16px 40px;
+	background: #fff none repeat scroll 0 0;
+	border-radius: 5px;
+	text-transform: capitalize;
+	font-weight: 500;
+	margin-left: 35px;
+	position: relative;
+	color: #B78D65
+}
+
+.header-btn>div {
+	position: absolute;
+	left: -16px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 40px;
+	height: 40px;
+	background: #B78D65;
+	text-align: center;
+	color: #B78D65;
+	border-radius: 5px;
+	line-height: 40px;
+	z-index: 1;
+}
+
+.header-btn>div i {
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.header-btn>div:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 4px solid #B78D65;
+	z-index: -1;
+	border-radius: 5px;
+}
+
+.search-toggle {
+	color: #fff;
+	padding: 10px
+}
+
+.search-toggle:hover {
+	color: #000
+}
+
+#search-overlay {
+	-webkit-transition: opacity 600ms, visibility 600ms;
+	transition: opacity 600ms, visibility 600ms;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.block {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.9);
+	margin: 0;
+	z-index: 99
+}
+
+.block:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.centered {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	padding: 10px 15px;
+	color: #FFF;
+	border: none;
+	background: transparent;
+}
+
+#search-box {
+	position: relative;
+	width: 100%;
+	margin: 0;
+}
+
+#search-form {
+	height: 4em;
+	border-bottom: 1px solid #fff;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+#search-box input[type="text"] {
+	width: 100%;
+	padding: 20px;
+	color: #fff;
+	outline: none;
+	font-size: 20px;
+	background: transparent
+}
+
+#search-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: auto;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	line-height: 42px;
+	border-width: 0;
+	background-color: transparent;
+	border-radius: 0 2px 2px 0;
+	cursor: pointer;
+}
+
+#close-btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	color: #fff
+}
+
+.spinner-master {
+	display: none;
+}
+
+.spinner-spin {
+	text-indent: -99999px
+}
+
+.spinner-spin {
+	width: 22px
+}
+#search-overlay.block.show{
+	opacity: 1;
+	visibility: visible;
+}
+.responsiveMenu{
+	display: none;
+}
+
+/* Responsive */
+@media(max-width: 991px) {
+	.responsiveMenu{
+		display: block;
+	}
+	.spinner-master {
+		display: flex;
+	}
+	.header:before {
+		display: none
+	}
+	.header:after {
+		display: none
+	}
+	.header-btn {
+		display: none
+	}
+	.header-navigation {
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+	}
+	.site-logo a {
+		width: 140px
+	}
+	.header {
+		padding-right: 5px
+	}
+	.header-navigation {
+		position: static
+	}
+	.centered {
+		width: 80%
+	}
+	#search-box input[type="text"] {
+		font-size: 16px
+	}
+	.block {
+		z-index: 999999
+	}
+	.mainmenu{
+		display: none;
+	}
+	
+}
+
+
+@media (width: 1024px) {
+	.mainmenu ul {
+		padding-left: 0;
+	}
+	.mainmenu ul li {
+		margin-right: 15px
+	}
+    .mainmenu ul li a{
+        font-size: 14px
+    }
+	
+}

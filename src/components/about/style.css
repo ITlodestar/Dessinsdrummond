@@ -1,0 +1,153 @@
+/* ===================== ABOUT ======================*/
+.about-area {
+	background-repeat: no-repeat;
+	background-position: center
+}
+
+.about-counter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.counter-box {
+	padding-left: 20%;
+	margin-bottom: 30px;
+}
+
+.counter-box h2 {
+	font-size: 48px;
+	margin: 0;
+	line-height: 40px;
+	margin-bottom: 5px;
+}
+
+.counter-box p {
+	line-height: 24px;
+	color: #4a4a4a;
+	font-weight: 600;
+	text-transform: capitalize;
+	font-size: 16px;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+.about-right {
+	position: relative;
+}
+
+.about_img_1 {
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+}
+
+.about_img_2 {
+	margin-left: auto;
+	display: block;
+}
+
+.about-signature {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.signature-left {
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 2px solid rgba(183, 141, 101, 0.6);
+}
+
+.signature-right h3 {
+	color: #000;
+	font-size: 26px;
+	text-transform: capitalize;
+	margin-bottom: 0;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+
+.signature-right p {
+	margin: 0
+}
+/*Responsive*/
+@media(max-width: 767px) {
+	.signature-left {
+		width: 50%;
+	}
+	.signature-right h3 {
+		font-size: 22px;
+	}
+	.about-counter {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		gap: 40px;
+		margin-top: 50px;
+		text-align: center
+	}
+	.counter-box {
+		padding-left: 0;
+		margin-bottom: 30px;
+		text-align: center
+	}
+	.counter-box h2 {
+		font-size: 40px
+	}
+	.counter-box p {
+		font-size: 14px;
+		letter-spacing: 0
+	}
+	.about-right {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center
+	}
+	.about-right>img {
+		float: left;
+		width: 50%;
+		position: static
+	}
+	.about-text {
+		overflow: hidden;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.counter-box {
+		padding-left: 10%
+	}
+	.counter-box h2 {
+		font-size: 36px;
+		line-height: 36px
+	}
+	.about_img_1 {
+		display: none
+	}
+}
+@media (width: 1024px){
+	.signature-left {
+		width: 145px
+	}
+	.about_img_1 {
+		left: -80px
+	}
+}

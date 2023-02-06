@@ -1,0 +1,140 @@
+/* ===================== TEAM ======================*/
+.team-area {
+	padding-top: 200px
+}
+
+.single-team-box {
+	margin-top: 30px;
+	padding: 10px;
+	border-radius: 5px;
+	position: relative
+}
+
+.team-image img {
+	border-radius: 5px
+}
+
+.team-image {
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: -1;
+}
+
+.team-image:after {
+	background: -webkit-linear-gradient(top, transparent 0%, black 100%);
+	background: linear-gradient(to bottom, transparent 0%, black 100%);
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	border-radius: 5px;
+	-webkit-transition: height 0.2s ease-out;
+	transition: height 0.2s ease-out;
+}
+
+.team-image:before {
+	background: -webkit-linear-gradient(top, transparent 0%, #000000 100%);
+	background: linear-gradient(to bottom, transparent 0%, #000000 100%);
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	border-radius: 5px;
+	-webkit-transition: height 0.5s ease-out;
+	transition: height 0.5s ease-out;
+}
+
+.team-meta {
+	position: absolute;
+	bottom: 20px;
+	z-index: 1;
+	width: 100%;
+	text-align: left;
+	padding: 0 30px;
+	color: #fff
+}
+
+.team-meta h4 {
+	font-size: 30px;
+	color: #fff;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.team-meta p {
+	color: #d1d1d1;
+	margin: 0
+}
+
+.single-team-box:before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 0%;
+	width: 100%;
+	top: 0;
+	-webkit-transition: height 0.5s ease-out;
+	transition: height 0.5s ease-out;
+	background: -webkit-linear-gradient(230deg, rgba(0, 0, 0, 0.2) 0%, #000000 100%);
+	background: linear-gradient(-140deg, rgba(0, 0, 0, 0.2) 0%, #000000 100%);
+	left: 0;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	z-index: -1;
+	border-radius: 5px
+}
+
+.single-team-box:hover:before {
+	height: 100%;
+}
+
+.single-team-box:hover .team-image:after {
+	height: 0
+}
+
+.single-team-box:hover .team-image:before {
+	height: 40%;
+}
+
+.team-page-area .site-heading {
+	margin-bottom: 0
+}
+
+/*Responsive*/
+@media (max-width: 767px){
+	.team-area {
+		padding-top: 100px;
+	}
+	.team-meta h4 {
+		font-size: 24px
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.team-meta {
+		padding: 0 15px
+	}
+	.team-meta h4 {
+		font-size: 26px;
+		letter-spacing: 1px;
+	}
+}
+@media (width: 1024px) {
+	.team-meta {
+		padding: 0 15px
+	}
+	.team-meta h4 {
+		font-size: 26px;
+		letter-spacing: 1px;
+	}
+}

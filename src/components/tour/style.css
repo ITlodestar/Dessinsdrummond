@@ -1,0 +1,75 @@
+/* ===================== TOUR ======================*/
+.tour-area {
+	padding-top: 0
+}
+
+.tour-area .container {
+	position: relative;
+	z-index: 1
+}
+
+.tour-area .container:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: -2385px;
+	width: 3000px;
+	height: 75%;
+	background: #000;
+	z-index: -1;
+}
+
+.tour-inn {
+	position: relative
+}
+
+.tour-inn:after {
+	background: #02050b;
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)"
+}
+
+.tour-inn .video-main {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 9;
+	width:100%;
+	height: 100%;
+}
+.tour_video_waves {
+    position: absolute;
+    left: 47%;
+    top: 45%;
+}
+/*Responsive*/
+@media(max-width: 767px) {
+	.tour-area .container:before {
+		top: 90px
+	}
+	.tour_video_waves {
+		position: absolute;
+		left: 40%;
+		top: 33%;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.tour-area .container:before {
+		width: 2600px
+	}
+}
+@media (width: 1024px){
+	.tour-area .container:before {
+		width: 2800px
+	}
+}

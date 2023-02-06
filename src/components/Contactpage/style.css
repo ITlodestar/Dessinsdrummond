@@ -1,0 +1,125 @@
+/* ===================== CONTACT ======================*/
+.single-contact-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: 50px 0 50px
+}
+
+.single-contact-info:last-child {
+	margin-bottom: 0
+}
+
+.contact-info-icon {
+	border: 5px solid #111;
+	font-size: 25px;
+	width: 70px;
+	height: 70px;
+	line-height: 60px;
+	text-align: center;
+	margin-right: 50px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.contact-info-icon span {
+	color: #111;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.contact-info-text h5 {
+	font-size: 21px
+}
+
+.contact-info-text p {
+	margin: 10px 0
+}
+
+.contact-page-right iframe {
+	width: 100%
+}
+
+.contact-form {
+	position: relative;
+	background-image: url(../../img/project-2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	padding: 100px 200px;
+	margin-bottom: 100px;
+	z-index: 1
+}
+
+.contact-form:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #02050b;
+	opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	left: 0;
+	bottom: 0;
+	z-index: -1
+}
+
+.contact-form .site-heading {
+	text-align: center
+}
+
+.contact-form .section-title {
+	color: #fff
+}
+
+.contact-form input {
+	color: #111;
+	height: 50px;
+	padding: 5px 10px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contact-form textarea {
+	color: #111;
+	height: 200px;
+	padding: 10px;
+	width: 100%;
+}
+
+.contact-form-action {
+	text-align: center;
+	margin-top: 50px
+}
+.contact-page-right iframe{
+	width:100%;
+	height: 450px;
+}
+
+/*Responsive*/
+@media(max-width: 767px){
+	.contact-form {
+		padding: 30px
+	}
+	.single-contact-info {
+		padding-left: 20px
+	}
+	.contact-page-right {
+		margin-top: 30px
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.contact-form {
+		padding: 30px
+	}
+	.single-contact-info {
+		padding-left: 20px
+	}
+	.contact-page-right {
+		margin-top: 30px
+	}
+}

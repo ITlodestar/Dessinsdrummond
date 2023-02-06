@@ -1,0 +1,101 @@
+/* ===================== EXPERTISE ======================*/
+.expertise-area {
+	position: relative;
+	z-index: 1
+}
+
+.expertise-bg {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	width: 50%;
+	z-index: 1;
+	right: 0;
+	background-position: 50% 50%;
+	background-repeat: repeat;
+	background-size: cover;
+	z-index: 0
+}
+
+.expertise-area:before {
+	position: absolute;
+	content: "";
+	top: 100px;
+	left: 0;
+	width: 60%;
+	height: 100%;
+	background: #000;
+	z-index: 1;
+}
+
+.expertise-inn {
+	-webkit-transform: translateY(100px);
+	transform: translateY(100px);
+	position: relative;
+	z-index: 1
+}
+
+.expertise-inn .site-heading h2 {
+	color: #fff
+}
+
+.expertise-inn .skills-prog h6 {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.expertise-inn .progress-bar{
+	overflow: inherit;
+	position: relative;
+	background-color: #ffffff;
+}
+.expertise-inn .progress{
+	overflow: inherit;
+	background-color: rgba(255, 255, 255, 0.18);
+	height: 1px;
+}
+.expertise-inn .progress-bar span{
+	position: absolute;
+	top: -25px;
+	right: 0;
+}
+.expertise-inn .skillbar{
+	margin-bottom: 30px;
+}
+.expertise-inn .skillbar:last-child{
+	margin-bottom: 0;
+}
+
+/*Responsive*/
+@media(max-width: 767px) {
+	.expertise-area:before {
+		width: 100%;
+	}
+	.expertise-bg {
+		display: none
+	}
+	.expertise-area {
+		background: #000
+	}
+	.expertise-inn {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+	.expertise-area:before {
+		display: none
+	}
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.about-text {
+		overflow: hidden;
+	}
+}
+@media (width: 1024px){
+	.about-text {
+		overflow: hidden;
+	}
+}

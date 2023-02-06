@@ -1,0 +1,144 @@
+/* ===================== FOOTER ======================*/
+.footer-area {
+	background: #000
+}
+
+.footer-top {
+	background: #000;
+	padding: 70px 0
+}
+
+.single-footer h3 {
+	color: #fff;
+	margin-bottom: 20px
+}
+
+.single-footer li {
+	list-style: none;
+	margin-bottom: 10px;
+	color: #777;
+	font-weight: 500;
+	font-size: 16px
+}
+
+.single-footer li:last-child {
+	margin-bottom: 0
+}
+
+.single-footer a,
+.single-footer p {
+	color: #777;
+	font-weight: 500;
+	font-size: 16px
+}
+
+.single-footer a:hover {
+	color: #fff
+}
+
+.footer-contact i {
+	color: #B78D65;
+	margin-right: 5px
+}
+
+.footer-contact li {
+	color: #ccc
+}
+
+.newsletter_form form {
+	position: relative;
+	height: 50px;
+}
+
+.newsletter_form input {
+	background: transparent;
+	font-weight: 500;
+	padding: 0;
+	height: 100%;
+	border-bottom: 1px solid #fff;
+	position: absolute;
+	left: 0;
+	height: 100%;
+	top: 0;
+	width: 100%;
+	color: #fff
+}
+
+.newsletter_form button {
+	color: #fff;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 24px
+}
+
+.newsletter_form input:focus {
+	outline: none
+}
+
+.footer-social {
+	margin-top: 30px
+}
+
+.footer-social li {
+	display: inline-block;
+	margin-right: 25px;
+	margin-bottom: 0
+}
+
+.footer-social a {
+	display: block;
+	color: #fff;
+	font-size: 20px
+}
+
+.newsletter_form {
+	margin-top: 35px
+}
+
+ul.footer-contact {
+	padding-top: 20px;
+	margin-top: 20px;
+	border-top: 1px solid rgba(119, 119, 119, 0.32);
+}
+
+.copyright {
+	padding: 30px 0;
+	text-align: center;
+	background: #000
+}
+
+.copyright p {
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin: 0
+}
+
+.fade_rule {
+	height: 1px;
+	background-color: rgba(119, 119, 119, 0.32);
+	width: 66em;
+	background-image: -webkit-linear-gradient(right, #000 2%, rgba(119, 119, 119, 0.32) 50%, #000 98%);
+	background-image: linear-gradient(to left, #000 2%, rgba(119, 119, 119, 0.32) 50%, #000 98%);
+	background-image: -webkit-linear-gradient(to left, #000 2%, rgba(119, 119, 119, 0.32) 50%, #000 98%);
+	background-image: -ms-linear-gradient(to left, #000 2%, rgba(119, 119, 119, 0.32) 50%, #000 98%);
+	background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.02, #000), color-stop(0.5, rgba(119, 119, 119, 0.32)), color-stop(0.98, #000));
+	margin: auto;
+}
+/*Responsive*/
+@media(max-width: 767px) {
+	.single-footer {
+		margin: 30px 0;
+	}
+	.single-footer p br {
+		display: none
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.single-footer {
+		margin: 30px 0;
+	}
+}

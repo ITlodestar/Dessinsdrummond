@@ -1,0 +1,32 @@
+/* ===================== 404 ERROR ======================*/
+.error-page-inn h2 {
+	font-size: 200px;
+	font-weight: 800;
+	line-height: 94px;
+	color: #000;
+	letter-spacing: 25px;
+}
+
+.error-page-inn h2 span {
+	color: #B78D65
+}
+
+.error-page-inn h3 {
+	margin-top: 30px;
+}
+/*Responsive*/
+@media(max-width: 767px){
+	.error-page-inn h2 {
+		font-size: 76px;
+		line-height: 60px;
+		letter-spacing: 10px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.error-page-inn h2 {
+		font-size: 100px;
+		line-height: 90px;
+		letter-spacing: 10px;
+	}
+}
+

@@ -1,0 +1,227 @@
+/* ===================== PROJECT SINGLE ======================*/
+.projects-page-area .col-md-5:nth-child(2n+2) {
+	-webkit-transform: translateY(50px);
+	transform: translateY(50px);
+}
+
+.projects-page-area .project-box {
+	margin-bottom: 100px
+}
+
+.projects-page-area {
+	padding-bottom: 50px
+}
+
+.project-details-top {
+	position: relative;
+	overflow: hidden;
+}
+
+.project-details-top-img {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.project-details-top-img img {
+	width: 100%
+}
+
+.project-details-top-box h3,
+.project-details-top-box h5 {
+	color: #fff;
+}
+
+.project-details-top-box p {
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px
+}
+
+.project-details-top-box {
+	width: 30%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	background: #111;
+	padding-top: 20px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	-webkit-transform: scale(0);
+	transform: scale(0)
+}
+
+.project-details-top:hover .project-details-top-box {
+	-webkit-transform: scale(1);
+	transform: scale(1)
+}
+
+.project-details-top:hover .project-details-top-img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2)
+}
+
+.project-details-top-box-text {
+	padding: 20px 0;
+}
+
+.project-details-share ul li {
+	display: inline-block;
+	margin: 0 3px;
+}
+
+.project-details-top-text {
+	margin: 30px 0
+}
+
+.project-details-top-text h2 {
+    font-size: 50px;
+	margin-bottom: 20px
+}
+
+.project-details-box {
+	margin-bottom: 0
+}
+
+.project-details-box img {
+	width: 100%
+}
+
+.project-details-box p {
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	-webkit-transform: rotate(0);
+	transform: rotate(0);
+	letter-spacing: 5px;
+}
+
+.project-details-box-meta-text {
+	padding: 30px;
+	background: rgba(249, 249, 249, 0.76);
+}
+
+.project-details-box-meta-text a {
+	font-weight: 500
+}
+
+.project-overview-box {
+	text-align: center;
+	margin: 15px 0
+}
+
+.details-box {
+	margin-top: 30px;
+}
+
+.project-overview {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin: 50px 0;
+	padding: 50px 0
+}
+
+.project-overview-box img {
+	width: 50px;
+	border: 1px solid #111;
+	padding: 5px;
+	margin-bottom: 20px
+}
+
+.project-overview-box h5 {
+	font-size: 22px
+}
+
+.project-overview-box p {
+	font-weight: 500;
+	color: #B78D65;
+	font-size: 18px
+}
+/*Responsive*/
+
+/*Responsive*/
+@media(max-width: 767px) {
+	.project-box p {
+		font-size: 14px;
+		left: -110px;
+		bottom: 135px;
+		letter-spacing: 4px;
+	}
+	.project-box h3 {
+		top: 15px;
+		left: 20px;
+		letter-spacing: 2px;
+		font-size: 19px;
+	}
+	
+	.project-box:hover .project-zoom {
+		-webkit-transform: scale(1) translateX(-50%, -50%);
+		transform: scale(1) translateX(-50%, -50%);
+	}
+	.projects-area {
+		padding-bottom: 70px;
+	}
+	.projects-page-area .col-md-5:nth-child(2n+2) {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	.projects-page-area .project-box {
+		margin-bottom: 30px;
+	}
+
+}
+@media(max-width: 575px) {
+	.projects-page-area .col-md-5:nth-child(2n+2) {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	.projects-page-area .project-box {
+		margin-bottom: 30px;
+	}
+	.projects-page-area {
+		padding-bottom: 70px
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.project-box p {
+		font-size: 16px;
+		left: -110px;
+		bottom: 150px;
+		letter-spacing: 6px;
+	}
+	.project-box h3 {
+		top: 15px;
+		left: 20px;
+		letter-spacing: 2px;
+		font-size: 24px;
+	}
+	
+	.project-box:hover .project-zoom {
+		-webkit-transform: scale(1) translateX(-50%, -50%);
+		transform: scale(1) translateX(-50%, -50%);
+	}
+	.projects-area {
+		padding-bottom: 70px
+	}
+}
+@media (width: 1024px){
+	.project-box p {
+		font-size: 20px;
+		left: -110px;
+		bottom: 150px;
+		letter-spacing: 6px;
+	}
+	.project-box h3 {
+		top: 15px;
+		left: 20px;
+		letter-spacing: 2px;
+		font-size: 30px;
+	}
+	
+	.project-box:hover .project-zoom {
+		-webkit-transform: scale(1) translateX(-50%, -50%);
+		transform: scale(1) translateX(-50%, -50%);
+	}
+}
