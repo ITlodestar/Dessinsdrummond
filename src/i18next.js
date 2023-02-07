@@ -7,7 +7,7 @@ import french from './lang/fr.json';
 
 i18n.use(initReactI18next).init({ 
     fallbackLng: "en",
-    lng: "en",
+    lng: "fr",
     interpolation: {
       escapeValue: true, // not needed for react as it escapes by default
     },

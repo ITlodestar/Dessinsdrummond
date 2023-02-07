@@ -77,6 +77,9 @@
 	padding-left: 50px;
 }
 
+.dropdown-menu.show {
+	display: block;
+}
 .mainmenu ul li {
 	display: inline-block;
 	list-style: none;
@@ -158,9 +161,7 @@
 }
 
 .header-btn {
-	display: inline-block;
-	padding: 16px 25px 16px 40px;
-	background: #fff none repeat scroll 0 0;
+	display: inline-block; 
 	border-radius: 5px;
 	text-transform: capitalize;
 	font-weight: 500;
@@ -325,7 +326,7 @@
 		display: block;
 	}
 	.spinner-master {
-		display: flex;
+		display: flex; 
 	}
 	.header:before {
 		display: none
@@ -342,13 +343,17 @@
 		justify-content: flex-end;
 	}
 	.site-logo a {
-		width: 140px
+		width: 140px;
+		background: #b78d65;
 	}
 	.header {
 		padding-right: 5px
 	}
 	.header-navigation {
 		position: static
+	}
+	.header-inn {
+		background: #b78d65;
 	}
 	.centered {
 		width: 80%

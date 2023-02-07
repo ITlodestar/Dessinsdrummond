@@ -1,11 +1,11 @@
 {
   "translation": {
     "Header": {
-      "Home": "Home",
-      "About": "About",
-      "Project": "Project",
-      "Services": "Services",
-      "Contact us": "Contact us"
+      "Home": "Accueil",
+      "About": "À Propos",
+      "Project": "Projet",
+      "Services": "Service",
+      "Contact": "Nous Conctacter"
     },
     "Home": {
       "about_1": "la mission de Construction Nordo est de construire des maisons unifamiliales dépassant les normes de l’industrie, tant au niveau de l’efficacité énergétique que des méthodes de construction, tout en gardant un rapport qualité prix très concurrentiel.",
@@ -28,6 +28,10 @@
       "content_4": "La maison de vos rêves sans tracas",
       "content_5": "Imaginez la maison de vos rêves. Enfin, vous avez de l’espace pour recevoir la parenté, les enfants ont chacun leur chambre, vous avez une piscine et, finalement, vos voitures entrent dans le garage.",
       "content_6": "Construction Nordo inc vous offre la tranquillité d’esprit avec toutes achat. Nous offrons la Garantie Maison neuve GCR sur toutes nos nouvelle construction."
+    },
+    "Contact": {
+      "content_1": "Vous avez des questions? Découvrez comment Construction Nordo peut vous aider à réaliser vos projets d’agrandissement ou ",
+      "send": "Envoyer le message"
     }
   }
 }

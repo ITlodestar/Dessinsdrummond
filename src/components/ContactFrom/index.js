@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withTranslation } from "react-i18next";
 
 class ContactForm extends Component {
   state = {
@@ -115,7 +116,7 @@ class ContactForm extends Component {
           <div className="col-lg-12">
             <div className="contact-form-action">
               <button className="form-button" type="submit">
-                Send Message
+                {this.props.t("Contact.send")}
               </button>
             </div>
           </div>
@@ -124,4 +125,4 @@ class ContactForm extends Component {
     );
   }
 }
-export default ContactForm;
+export default withTranslation()(ContactForm);

@@ -4,17 +4,31 @@ import MobileMenu from "../../components/MobileMenu";
 import { Link } from "react-router-dom";
 
 import "./style.css";
+import { changeLanguage } from "i18next";
+import { withTranslation } from "react-i18next";
 
-const Header = () => {
+const Header = (props) => {
   const [show, setShow] = useState(false);
-
+  const [langshow, Setlangshow] = useState(false);
+  const [langName, SetlangName] = useState("fr");
   const SubmitHandler = (e) => {
     e.preventDefault();
   };
+ 
+  const ChooseLanguage = () => {
+    if(langshow === true) {
+      Setlangshow(false); 
+    }
+    else {
+      Setlangshow(true);
+    }
+  }
 
-  const onClick = (e) => {
-    e.preventDefault();
-  };
+  const ChangeLang = (lang) => {
+    changeLanguage(lang);
+    Setlangshow(false); 
+    SetlangName(lang);
+  }
 
   return (
     <header className="header">
@@ -31,77 +45,40 @@ const Header = () => {
                 <nav id="menu">
                   <ul className="dropdown">
                     <li>
-                      <Link to="/">Home</Link>
+                      <Link to="/">{props.t('Header.Home')}</Link>
                     </li>
                     <li>
-                      <Link to="/about">About</Link>
+                      <Link to="/about">{props.t('Header.About')}</Link>
                     </li>
                     <li>
-                      <Link to="/" onClick={onClick}>
-                        Projects
-                      </Link>
-                      <ul>
-                        <li>
-                          <Link to="/projects">Project</Link>
-                        </li>
-                        <li>
-                          <Link to="/projects-single">Project Details</Link>
-                        </li>
-                      </ul>
-                    </li>
+                      <Link to="/projects">{props.t('Header.Project')}</Link>
+                    </li> 
                     <li>
-                      <Link to="/service">Services</Link>
-                    </li>
-                    {/* <li>
-                      <Link to="/" onClick={onClick}>
-                        Pages
-                      </Link>
-                      <ul>
-                        <li>
-                          <Link to="/portfolio">Portfolio</Link>
-                        </li>
-                        <li>
-                          <Link to="/team">Team</Link>
-                        </li>
-                        <li>
-                          <Link to="/faq">Faq</Link>
-                        </li>
-                        <li>
-                          <Link to="/contact">Contact</Link>
-                        </li>
-                        <li>
-                          <Link to="/404">Error</Link>
-                        </li>
-                      </ul>
-                    </li> */} 
-                    {/* <li>
-                      <Link to="/" onClick={onClick}>
-                        Blog
-                      </Link>
-                      <ul>
-                        <li>
-                          <Link to="/blog">Blog</Link>
-                        </li>
-                        <li>
-                          <Link to="/blog-single">Blog Details</Link>
-                        </li>
-                      </ul>
-                    </li> */}
+                      <Link to="/service">{props.t('Header.Services')}</Link>
+                    </li> 
                     <li>
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/contact">{props.t('Header.Contact')}</Link>
                     </li>
                   </ul>
                 </nav>
               </div>
-              <div className="header-action">
+              <div className="header-action d-flex">
+                <div className="dropdown">
+                  <button type="button" className="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" onClick={() => ChooseLanguage()}>
+                    { langName }
+                  </button>
+                  <div className={ `dropdown-menu ${langshow ? "show" : ""}`} >
+                    <a className="dropdown-item" href="#" onClick={() => ChangeLang('fr')}>Fr</a>
+                    <a className="dropdown-item" href="#"onClick={() => ChangeLang('en')}>En</a> 
+                  </div>
+                </div>
                 <button className="search-toggle" onClick={() => setShow(true)}>
                   <i className="fa fa-search"></i>
                 </button>
                 <Link to="/contact" className="header-btn">
                   <div className="icon-holder">
                     <i className="far fa-envelope"></i>
-                  </div>
-                  Get In Touch
+                  </div> 
                 </Link>
               </div>
               <div
@@ -138,4 +115,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default withTranslation()(Header);

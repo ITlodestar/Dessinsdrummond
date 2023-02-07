@@ -4,15 +4,17 @@ import PageTitle from '../../components/pagetitle'
 import ProjectSingle from '../../components/ProjectSingle'
 import Testimonial from '../../components/testimonial'
 import Footer from '../../components/footer'
+import { useParams } from 'react-router'
 
 
 
 const ProjectPage =() => {
+    const { id } = useParams();
     return(
         <Fragment>
             <Header/>
-            <PageTitle pageTitle={'PROJECT DETAILS'} pagesub={'Project Details'}/>
-            <ProjectSingle/>
+            <PageTitle projectId={ id } pageTitle={'PROJECT DETAILS'} pagesub={'Project Details'}  />
+            <ProjectSingle projectId={ id }/>
             <Testimonial/>
             <Footer/>
         </Fragment>

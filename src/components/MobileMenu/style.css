@@ -74,7 +74,7 @@
 	nav#mobileMenu {
 		overflow: hidden;
 		max-height: 0;
-		background-color: #000;
+		background-color: #b78d65;
 		-webkit-transition: all 0.4s ease 0s;
 		transition: all 0.4s ease 0s;
 	}

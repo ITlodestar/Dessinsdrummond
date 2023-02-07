@@ -5,7 +5,7 @@
             "About": "About",
             "Project": "Project",
             "Services": "Services",
-            "Contact us": "Contact us"
+            "Contact": "Contact us"
         },
         "Home": {
             "about_1": "Construction Nordo's mission is to build single-family homes that exceed industry standards, both in terms of energy efficiency and construction methods, while maintaining a very competitive price-quality ratio.",
@@ -28,6 +28,18 @@
             "content_4"  : "The home of your dreams without hassle",
             "content_5"  : "Imagine the house your dreams . _ Finally, you have space to receive the parent , the children each have their own bedroom, you have a swimming pool and, finally, your cars fit in the garage.",
             "content_6"  : "Nordo inc offers you peace of mind with any purchase. We offer the GCR New Home Guarantee on all our new construction."
+        },
+        "Project" : {
+            "See_Content" : "SEE THE SIZE OF THE ROOMS AND HEIGHT OF THE CEILINGS",
+            "Basement" : "Basement",
+            "Ground_floor" : "Ground floor",
+            "Pieces" : "Pieces",
+            "Dimensions" : "Dimensions",
+            "Ceiling" : "Ceiling"
+        },
+        "Contact": {
+            "content_1": "You have questions? Find out how Construction Nordo can help",
+            "send": "Send message"
         }
     }
 }

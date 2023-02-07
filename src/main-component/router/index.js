@@ -26,8 +26,8 @@ const AllRoute = () => {
             <Route exact path='/' component={Homepage}/>
             <Route path='/home' component={Homepage} />
             <Route path='/about' component={AboutPage} />
+            <Route path='/projects/:id' component={ProjectSinglePage} />
             <Route path='/projects' component={ProjectPage} />
-            <Route path='/projects-single' component={ProjectSinglePage} />
             <Route path='/service' component={ServicePage} />
             <Route path='/service-single' component={ServiceSinglePage} />
             <Route path='/portfolio' component={PortfolioPage} />

@@ -1,8 +1,9 @@
 import React from "react";
+import { withTranslation } from "react-i18next";
 import ContactForm from "../ContactFrom";
 import "./style.css";
 
-const Contactpage = () => {
+const Contactpage = ({ t }) => {
   return (
     <section className="contact-page-area">
       <div className="container">
@@ -10,8 +11,8 @@ const Contactpage = () => {
           <div className="col-lg-12">
             <div className="contact-form">
               <div className="site-heading" data-aos="fade-up">
-              <h2 className="section-title text-left">Contact us</h2>
-                <h3 className="sub-title text-left"> You have questions? Find out how Construction Nordo can help </h3>
+              <h2 className="section-title text-left">{t("Header.Contact")}</h2>
+                <h3 className="sub-title text-left">{t("Contact.content_1")}</h3>
                 
               </div>
               <ContactForm />
@@ -73,4 +74,4 @@ const Contactpage = () => {
   );
 };
 
-export default Contactpage;
+export default withTranslation()(Contactpage);
