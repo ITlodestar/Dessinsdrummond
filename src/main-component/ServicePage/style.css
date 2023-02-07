@@ -1,0 +1,30 @@
+.content {
+	padding : 200px 80px 50px 100px; 
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	background: linear-gradient( 90deg  , #cea074  , rgb(255, 255, 255));
+}
+.img { 
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	background-size: 100%;
+	background-image: url('../../img/service_f.png');
+} 
+.service p{
+	color: rgb(34, 33, 33);
+}
+
+@media (max-width: 1200px) {
+	.content{
+		background: linear-gradient(180deg  , #cea074  , rgb(255, 255, 255));
+	}
+	.img {
+		height: 600px;
+	}
+}

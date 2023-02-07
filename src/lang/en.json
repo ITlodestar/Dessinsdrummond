@@ -11,6 +11,23 @@
             "about_1": "Construction Nordo's mission is to build single-family homes that exceed industry standards, both in terms of energy efficiency and construction methods, while maintaining a very competitive price-quality ratio.",
             "about_2": "The values of the company are pride, honesty, respect and proactivity. We place the interests of the client at the heart of our concerns to provide unparalleled customer service.",
             "about_3": "In 2010, Dominic Massaro founded a construction company specializing in wood framing, he ensured the quality, recruitment, planning and scheduling, consulting services and other services to the industry of building. He joined Construction Nordo in 2021 as a partner and director of operations. During his career Dominic has played a key role in the execution of several residential construction projects for the largest builders of new homes in Quebec."
+        },
+        "Services": {
+            "question_1" : "Do you own land ?",
+            "question_2" : "Why choose turnkey construction ?",
+            "content_1"  : "It is possible to build one of our prestige house models on land belonging to you",
+            "content_2"  : "The realization of a _ turnkey construction project consists of building a new house from A to Z by taking charge of the project management. You will be able to save your energy for the choice of materials and the decoration with the judicious advice of our designer.",
+            "content_3"  : {
+                "p" : "Experienced project managers , we take care of each step of the management of your project :",
+                "tree_1" : "Planning",
+                "tree_2" : "Design",
+                "tree_3" : "Construction: earthwork, excavation, basement, ground floor , walls , doors and windows , upper floors, roofing , framework, cover, electricity , plumbing , heating and insulation, wall covering",
+                "tree_4" : "D ecoration ",
+                "tree_5" : "Landscaping "
+            },
+            "content_4"  : "The home of your dreams without hassle",
+            "content_5"  : "Imagine the house your dreams . _ Finally, you have space to receive the parent , the children each have their own bedroom, you have a swimming pool and, finally, your cars fit in the garage.",
+            "content_6"  : "Nordo inc offers you peace of mind with any purchase. We offer the GCR New Home Guarantee on all our new construction."
         }
     }
 }
