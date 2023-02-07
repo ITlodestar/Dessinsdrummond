@@ -5,10 +5,11 @@ import bg from "../../img/about-bg.png";
 import img1 from "../../img/about-1.png";
 import img2 from "../../img/about-2.png";
 import signature from "../../img/signature.png";
+import { withTranslation } from 'react-i18next';
 
 import "./style.css";
 
-const About = () => {
+const About = ({ t }) => {
   return (
     <section className="about-area" style={{ backgroundImage: `url(${bg})` }}>
       <div className="container">
@@ -16,29 +17,19 @@ const About = () => {
           <div className="col-lg-5 col-md-6">
             <div className="about-left" data-aos="fade-right">
               <div className="site-heading">
-                <h3 className="sub-title">ABOUT US</h3>
-                <h2 className="section-title">
-                  Strategy-led design in every detail
-                </h2>
+                <h3 className="sub-title">ABOUT US</h3> 
               </div>
-              <p>
-                Architecture viverra tristique justo duis vitae diam neque
-                nivamus aestan ateuene artines aringianu atelit finibus viverra
-                nec lacus. Nedana theme erodino setlie suscipe no curabit
-                tristique aringianu atelit finibus .
-              </p>
-              <p>
-                Design inilla duiman at elit finibus viverra nec a lacus themo
-                the drudea seneoice misuscipit non sagie the fermen.
-              </p>
+              <p>{t('Home.about_1')}</p>
+              <p>{t('Home.about_2')}</p>
+              <p>{t('Home.about_3')}</p>
               <div className="about-signature">
                 <div className="signature-left">
                   <img src={signature} alt="signature" />
                 </div>
-                <div className="signature-right">
+                {/* <div className="signature-right">
                   <h3>Robertho Garcia</h3>
                   <p>President</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -91,4 +82,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default withTranslation()(About);

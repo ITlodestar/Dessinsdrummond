@@ -4,10 +4,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/all.min.css';
 import App from './main-component/App/App';
-
-
-
-
+import './i18next';
 
 ReactDOM.render(
   <React.Fragment>

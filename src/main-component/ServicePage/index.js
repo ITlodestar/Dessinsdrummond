@@ -10,7 +10,7 @@ const ServicePage =() => {
     return(
         <Fragment>
             <Header/>
-            <PageTitle pageTitle={'SERVICE'} pagesub={'Service'}/>
+            <PageTitle pageTitle={'Why choose turnkey construction?'} />
             <ServiceList/>
             <Footer/>
         </Fragment>

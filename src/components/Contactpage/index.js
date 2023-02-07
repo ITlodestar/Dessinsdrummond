@@ -12,6 +12,7 @@ const Contactpage = () => {
               <div className="site-heading" data-aos="fade-up">
               <h2 className="section-title text-left">Contact us</h2>
                 <h3 className="sub-title text-left"> You have questions? Find out how Construction Nordo can help </h3>
+                
               </div>
               <ContactForm />
             </div>
