@@ -50,19 +50,9 @@ const Header = () => {
                       </ul>
                     </li>
                     <li>
-                      <Link to="/" onClick={onClick}>
-                        Service
-                      </Link>
-                      <ul>
-                        <li>
-                          <Link to="/service">Service</Link>
-                        </li>
-                        <li>
-                          <Link to="/service-single">Service Details</Link>
-                        </li>
-                      </ul>
+                      <Link to="/service">Services</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/" onClick={onClick}>
                         Pages
                       </Link>
@@ -83,8 +73,8 @@ const Header = () => {
                           <Link to="/404">Error</Link>
                         </li>
                       </ul>
-                    </li>
-                    <li>
+                    </li> */} 
+                    {/* <li>
                       <Link to="/" onClick={onClick}>
                         Blog
                       </Link>
@@ -96,7 +86,7 @@ const Header = () => {
                           <Link to="/blog-single">Blog Details</Link>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/contact">Contact</Link>
                     </li>

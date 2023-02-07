@@ -4,8 +4,7 @@ class ContactForm extends Component {
   state = {
     name: "",
     email: "",
-    subject: "",
-    lastname: "",
+    subject: "", 
     events: "",
     notes: "",
     error: {},
@@ -24,7 +23,7 @@ class ContactForm extends Component {
   subimtHandler = (e) => {
     e.preventDefault();
 
-    const { name, email, subject, lastname, events, notes, error } = this.state;
+    const { name, email, subject,  events, notes, error } = this.state;
 
     if (name === "") {
       error.name = "Please enter your name";
@@ -34,9 +33,6 @@ class ContactForm extends Component {
     }
     if (subject === "") {
       error.subject = "Please enter your subject";
-    }
-    if (lastname === "") {
-      error.lastname = "Please enter your Lastname";
     }
     if (events === "") {
       error.events = "Select your event list";
@@ -54,7 +50,6 @@ class ContactForm extends Component {
       error.name === "" &&
       error.email === "" &&
       error.email === "" &&
-      error.lastname === "" &&
       error.subject === "" &&
       error.events === "" &&
       error.notes === ""
@@ -71,7 +66,7 @@ class ContactForm extends Component {
   };
 
   render() {
-    const { name, email, subject, lastname, error } = this.state;
+    const { name, email, subject,  error } = this.state;
 
     return (
       <form onSubmit={this.subimtHandler} className="form">
@@ -87,19 +82,7 @@ class ContactForm extends Component {
               />
               <p>{error.name ? error.name : ""}</p>
             </div>
-          </div>
-          <div className="col-lg-6 col-sm-6">
-            <div className="form-field">
-              <input
-                value={lastname}
-                onChange={this.changeHandler}
-                type="text"
-                name="lastname"
-                placeholder="Lastname"
-              />
-              <p>{error.lastname ? error.lastname : ""}</p>
-            </div>
-          </div>
+          </div> 
           <div className="col-lg-6 col-sm-6">
             <div className="form-field">
               <input
@@ -112,7 +95,7 @@ class ContactForm extends Component {
               <p>{error.email ? error.email : ""}</p>
             </div>
           </div>
-          <div className="col-lg-6 col-sm-6">
+          <div className="col-lg-12 col-sm-12">
             <div className="form-field">
               <input
                 onChange={this.changeHandler}

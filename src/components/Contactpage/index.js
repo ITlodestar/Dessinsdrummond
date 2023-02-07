@@ -10,8 +10,8 @@ const Contactpage = () => {
           <div className="col-lg-12">
             <div className="contact-form">
               <div className="site-heading" data-aos="fade-up">
-                <h3 className="sub-title">Get Quote</h3>
-                <h2 className="section-title">Free Consultancy</h2>
+              <h2 className="section-title text-left">Contact us</h2>
+                <h3 className="sub-title text-left"> You have questions? Find out how Construction Nordo can help </h3>
               </div>
               <ContactForm />
             </div>
@@ -39,8 +39,10 @@ const Contactpage = () => {
                   </div>
                   <div className="contact-info-text">
                     <h5>Phone</h5>
-                    <p>(444) 123 4567 89</p>
-                    <p>(+09) 123 4567 89</p>
+                    <p>Simon B é dard, Partner</p>
+                    <p>514-927-1549 </p>
+                    <p>Dominic Massaro, Partner</p>
+                    <p>514-927-1519 </p>  
                   </div>
                 </div>
                 <div className="single-contact-info" data-aos="fade-up">
