@@ -69,7 +69,7 @@ const ProjectSingle = (props) => {
                       index += 1;
                       return (
                         <tr key={index}>
-                          <td>{item.Pieces}</td>
+                          <td>{props.t(`Project.list.${item.Pieces}`)}</td>
                           <td>{item.Dimensions}</td>
                           <td>{item.Ceiling}</td>
                         </tr>
@@ -79,7 +79,7 @@ const ProjectSingle = (props) => {
                       index += 1;
                       return (
                         <tr key={index}>
-                          <td>{item.Pieces}</td>
+                          <td>{props.t(`Project.list.${item.Pieces}`)}</td>
                           <td>{item.Dimensions}</td>
                           <td>{item.Ceiling}</td>
                         </tr>
@@ -104,7 +104,7 @@ const ProjectSingle = (props) => {
                       index += 1;
                       return (
                         <tr key={index}>
-                          <td>{item.Pieces}</td>
+                          <td>{props.t(`Project.list.${item.Pieces}`)}</td>
                           <td>{item.Dimensions}</td>
                           <td>{item.Ceiling}</td>
                         </tr>
@@ -114,7 +114,7 @@ const ProjectSingle = (props) => {
                       index += 1;
                       return (
                         <tr key={index}>
-                          <td>{item.Pieces}</td>
+                          <td>{props.t(`Project.list.${item.Pieces}`)}</td>
                           <td>{item.Dimensions}</td>
                           <td>{item.Ceiling}</td>
                         </tr>

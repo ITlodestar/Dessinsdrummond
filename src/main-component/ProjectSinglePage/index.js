@@ -13,8 +13,8 @@ const ProjectPage =() => {
     return(
         <Fragment>
             <Header/>
-            <PageTitle projectId={ id } pageTitle={'PROJECT DETAILS'} pagesub={'Project Details'}  />
-            <ProjectSingle projectId={ id }/>
+            <PageTitle projectId={ id } pageTitle={'Project-details'} pagesub={'Project Details'}  />
+            <ProjectSingle projectId={ id } />
             <Testimonial/>
             <Footer/>
         </Fragment>

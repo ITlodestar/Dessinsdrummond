@@ -5,7 +5,10 @@
       "About": "À Propos",
       "Project": "Projet",
       "Services": "Service",
-      "Contact": "Nous Conctacter"
+      "Contact": "Nous Conctacter",
+      "Projects": "Projets",
+      "Aboutus": "À propos de nous",
+      "Project-details": "détails du projet"
     },
     "Home": {
       "about_1": "la mission de Construction Nordo est de construire des maisons unifamiliales dépassant les normes de l’industrie, tant au niveau de l’efficacité énergétique que des méthodes de construction, tout en gardant un rapport qualité prix très concurrentiel.",
@@ -29,9 +32,44 @@
       "content_5": "Imaginez la maison de vos rêves. Enfin, vous avez de l’espace pour recevoir la parenté, les enfants ont chacun leur chambre, vous avez une piscine et, finalement, vos voitures entrent dans le garage.",
       "content_6": "Construction Nordo inc vous offre la tranquillité d’esprit avec toutes achat. Nous offrons la Garantie Maison neuve GCR sur toutes nos nouvelle construction."
     },
+    "Project" : {
+      "See_Content" : "VOIR LA GRANDEUR DES PIÈCES ET HAUTEUR DES PLAFONDS",
+      "Basement" : "Sous-sol",
+      "Ground_floor" : "Rez-de-chaussée",
+      "Pieces" : "Pièces",
+      "Dimensions" : "Dimensions",
+      "Ceiling" : "Plafond",
+      "list" : {
+        "mechanical": "Pièce de mécanique",
+        "Bedroom": "Chambre à coucher",
+        "Wardrobe": "Garde-robe", 
+        "laundry room": "Buanderie",
+        "lot": "Îlot",
+        "Storage": "Stockage",
+        "Lingerie": "Lingerie",
+        "Shower": "Douche", 
+        "Family room": "La salle a manger", 
+        "Perron": "Perron",
+        "Sheltered-steps": "Marches abritées",
+        "dining room": "salle à manger",
+        "Î lot": "Î lot",
+        "Food":"Nourriture",
+        "Pantry": "Garde-manger",
+        "Entrance": "Entrée",
+        "Changing room": "Cabine d'essayage",
+        "walk-in": "Walk-in",
+        "living room": "salon",
+        "Bathroom" : "Salle de douche",
+        "Sheltered-terrace":"Terrasse couverte",
+        "Sector-activities": "Activités sectorielles"
+    }
+  },
     "Contact": {
       "content_1": "Vous avez des questions? Découvrez comment Construction Nordo peut vous aider à réaliser vos projets d’agrandissement ou ",
       "send": "Envoyer le message"
+    },
+    "footer": {
+        "followus" : "SUIVEZ-NOUS"
     }
   }
 }

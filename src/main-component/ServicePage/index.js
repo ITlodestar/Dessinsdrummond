@@ -10,6 +10,7 @@ const ServicePage = () => {
     return (
         <Fragment>
             <Header /> 
+            {/* <PageTitle pageTitle={'Services'} pagesub={'Services'}/> */}
             <ServiceContent /> 
             <Footer />
         </Fragment>

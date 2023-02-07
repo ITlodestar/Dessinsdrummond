@@ -6,8 +6,8 @@
         {"Pieces" : "Bedroom" , "Dimensions": "13'6\" x 11'2\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Wardrobe" , "Dimensions": "2'0\" x 7'4\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Bathroom" , "Dimensions": "6'6\" x 7'8\"", "Ceiling": "~ 8'0\"" },
-        {"Pieces" : "Mechanical part" , "Dimensions": "4'8\" x 7'10\"", "Ceiling": "~ 8'0\"" },
-        {"Pieces" : "Sector activities" , "Dimensions": "18'6\" x 28'2\"", "Ceiling": "~ 8'0\"" },
+        {"Pieces" : "mechanical" , "Dimensions": "4'8\" x 7'10\"", "Ceiling": "~ 8'0\"" },
+        {"Pieces" : "Sector-activities" , "Dimensions": "18'6\" x 28'2\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Storage" , "Dimensions": "10'0\" x 6'0\"", "Ceiling": "~ 8'0\"" }
     ],
     "B_table2": [ 
@@ -22,7 +22,7 @@
         {"Pieces" : "Bathroom" , "Dimensions": "18'6\" x 28'2\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Lingerie" , "Dimensions": "7'6\" x 8'4\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Shower" , "Dimensions": "6'6\" x 7'8\"", "Ceiling": "~ 8'0\"" },
-        {"Pieces" : "Mechanical part " , "Dimensions": "4'8\" x 7'10\"", "Ceiling": "~ 8'0\"" },
+        {"Pieces" : "mechanical" , "Dimensions": "4'8\" x 7'10\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Family room" , "Dimensions": "18'6\" x 28'2\"", "Ceiling": "~ 8'0\"" }
     ],
     "G_table1": [ 
@@ -38,25 +38,25 @@
         {"Pieces" : "bedroom" , "Dimensions": "10'2\" x 8'2\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Wardrobe" , "Dimensions": "3'0\" x 2'0\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Lingerie" , "Dimensions": "1'8\" x 3'1\"", "Ceiling": "~ 8'0\"" },
-        {"Pieces" : "Full bathroom" , "Dimensions": "12'2\" x 9'4\"", "Ceiling": "~ 8'0\"" },
-        {"Pieces" : "Sheltered terrace" , "Dimensions": "12'0\" x 12'0\"", "Ceiling": "~ 8'6\"" },
+        {"Pieces" : "Bathroom" , "Dimensions": "12'2\" x 9'4\"", "Ceiling": "~ 8'0\"" },
+        {"Pieces" : "Sheltered-terrace" , "Dimensions": "12'0\" x 12'0\"", "Ceiling": "~ 8'6\"" },
         {"Pieces" : "Gallery" , "Dimensions": "10'2\" x 3'6\"", "Ceiling": "~13'2\"" }
     ],
     "G_table2": [ 
         {"Pieces" : "Perron" , "Dimensions": "9'8\" x 4'0\"", "Ceiling": "~ 8'0\"" },
-        {"Pieces" : "Sheltered steps" , "Dimensions": "11'4\" x 12'0\"", "Ceiling": "~ 8'0\"" },
+        {"Pieces" : "Sheltered-steps" , "Dimensions": "11'4\" x 12'0\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "dining room" , "Dimensions": "10'0\" x 12'10\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Food" , "Dimensions": "12'6\" x 12'10\"", "Ceiling": "~ 8'0\"" }, 
         {"Pieces" : "Î lot" , "Dimensions": "4'6\" x 7'8\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Pantry" , "Dimensions": "4'0\" x 5'0\"", "Ceiling": "~ 8'0\"" },
-        {"Pieces" : "Entrance " , "Dimensions": "6'0\" x 5'10\"", "Ceiling": "~ 8'0\"" },
+        {"Pieces" : "Entrance" , "Dimensions": "6'0\" x 5'10\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Changing room" , "Dimensions": "5'6\" x 5'10\"", "Ceiling": "~ 8'0\"" },
-        {"Pieces" : "bedroom" , "Dimensions": "13'6\" x 13'0\"", "Ceiling": "~ 8'0\"" },
+        {"Pieces" : "Bedroom" , "Dimensions": "13'6\" x 13'0\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "walk-in" , "Dimensions": "3'4\" x 9'11\"", "Ceiling": "~ 8'0\"" },
-        {"Pieces" : "Bathroom " , "Dimensions": "10'0\" x 8'6\"", "Ceiling": "~ 8'0\"" },
+        {"Pieces" : "Bathroom" , "Dimensions": "10'0\" x 8'6\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Shower" , "Dimensions": "4'0\" x 3'0\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Lingerie" , "Dimensions": "1'10\" x 1'6\"", "Ceiling": "~ 8'0\"" },
-        {"Pieces" : "bedroom" , "Dimensions": "13'6\" x 10'6\"", "Ceiling": "~ 8'0\"" },
+        {"Pieces" : "Bedroom" , "Dimensions": "13'6\" x 10'6\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Wardrobe" , "Dimensions": "2'0\" x 4'10\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "Storage " , "Dimensions": "2'0\" x 2'0\"", "Ceiling": "~ 8'0\"" },
         {"Pieces" : "living room" , "Dimensions": "16'4\" x 15'10\"", "Ceiling": "~ 8'0\"" }

@@ -13,7 +13,7 @@ const AboutPage =() => {
     return(
         <Fragment>
             <Header/>
-            <PageTitle pageTitle={'About Us'} pagesub={'About'}/>
+            <PageTitle pageTitle={'Aboutus'} pagesub={'About'}/>
             <Feature/>
             <Partners/>
             <Expertise/>

@@ -10,7 +10,7 @@ const ProjectPage =() => {
     return(
         <Fragment>
             <Header/>
-            <PageTitle pageTitle={'PROJECTS'} pagesub={'Projects'}/>
+            <PageTitle pageTitle={'Projects'} pagesub={'Projects'}/>
             <ProjectList/>
             <Footer/>
         </Fragment>

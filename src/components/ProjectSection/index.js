@@ -1,4 +1,5 @@
 import React from "react";
+import { withTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import projectImg1 from "../../img/project-1.png";
@@ -7,14 +8,14 @@ import projectImg3 from "../../img/project-3.png";
 
 import "./style.css";
 
-const ProjectSection = () => {
+const ProjectSection = ({ t }) => {
   return (
     <section className="projects-area pt-0">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-sm-6">
             <div className="site-heading">
-              <h3 className="sub-title">PROJECTS</h3>
+              <h3 className="sub-title">{t("Header.Project")}</h3>
               <h2 className="section-title">Featured Work.</h2>
             </div>
             <div className="project-box" data-aos="fade-up">
@@ -121,4 +122,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default withTranslation()(ProjectSection);

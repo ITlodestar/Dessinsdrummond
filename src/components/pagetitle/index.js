@@ -1,4 +1,5 @@
 import React from "react";
+import { withTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import bg from "../../img/breadcrumb-bg.jpg";
 
@@ -33,13 +34,13 @@ const PageTitle = (props) => {
             </Link>
           </li>
         </ul>
-        <p>Follow Us</p>
+        <p>{props.t(`footer.followus`)} </p>
       </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className="breadcrumb-inn">
-              <h1>{props.pageTitle}</h1>
+              <h1>{props.t(`Header.${props.pageTitle}`)} </h1>
               <ul>
                 <li className="home">
                   <Link to="/">
@@ -56,4 +57,4 @@ const PageTitle = (props) => {
   );
 };
 
-export default PageTitle;
+export default withTranslation()(PageTitle);
