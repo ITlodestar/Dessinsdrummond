@@ -9,6 +9,7 @@ import hero1 from "../../img/slider-1.jpg";
 import hero2 from "../../img/slider-2.png";
 
 import "./style.css";
+import { withTranslation } from "react-i18next";
 
 class Hero extends Component {
   constructor(props) {
@@ -60,7 +61,7 @@ class Hero extends Component {
               </Link>
             </li>
           </ul>
-          <p>Follow Us</p>
+          <p>{ this.props.t("footer.followus")  }</p>
         </div>
 
         <div className="hero-slider">
@@ -81,15 +82,15 @@ class Hero extends Component {
                 <div className="container">
                   <div className="hero-text">
                     <h2>
-                      Unique Architecture <br />
-                      Design Ideas
+                      { this.props.t("Home.Hero1")  }<br /> 
+                      { this.props.t("Home.Hero2")  }
                     </h2>
                     <div className="hero-action">
                       <Link to="/projects" className="cta-btn btn-fill">
-                        See Projects
+                      { this.props.t("Home.seeproject")  }
                       </Link>
                       <Link to="/contact" className="cta-btn btn-border">
-                        Get Contact
+                      { this.props.t("Home.getContact")  }
                       </Link>
                     </div>
                   </div>
@@ -146,4 +147,4 @@ class Hero extends Component {
   }
 }
 
-export default Hero;
+export default withTranslation()(Hero);
