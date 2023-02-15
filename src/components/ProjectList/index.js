@@ -24,7 +24,7 @@ const ProjectList = ({ t }) => {
             <div className="row align-items-center justify-content-between">
               <div className="col-md-5  col-sm-6">
                 <div className="project-box">
-                  <Link to="/projects/1">
+                  <Link to="/projects/1/#">
                     <img src={projectImg1} alt="img" width={`100%`} height = {`100%`}/>
                     <h3>
                     Saint-Ad è le 
@@ -55,7 +55,7 @@ const ProjectList = ({ t }) => {
               </div>
               <div className="col-md-5 col-sm-6">
                 <div className="project-box">
-                  <Link to="/projects/2">
+                  <Link to="/projects/2/#">
                     <img src={projectImg2} alt="img" width={`100%`} height = {`100%`}/>
                     <h3>
                     Saint-Ad è le

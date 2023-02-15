@@ -11,10 +11,10 @@
       "Project-details": "détails du projet"
     },
     "Home": {
-      "Hero1":"Architecture unique",
-      "Hero2":"Idées de conception",
-      "seeproject" :"Voir les projets",
-      "getContact" : "Obtenir des contacts",
+      "Hero1": "Architecture unique",
+      "Hero2": "Idées de conception",
+      "seeproject": "Voir les projets",
+      "getContact": "Obtenir des contacts",
       "about_1": "la mission de Construction Nordo est de construire des maisons unifamiliales dépassant les normes de l’industrie, tant au niveau de l’efficacité énergétique que des méthodes de construction, tout en gardant un rapport qualité prix très concurrentiel.",
       "about_2": "Les valeurs de l’entreprise sont la fierté, l'honnêteté, le respect et la proactivité. Nous plaçons les intérêts du client au cœur de nos préoccupations pour offrir un service à la clientèle hors-pair.",
       "about_3": "En 2010, Dominic Massaro à fondé une société de construction spécialisée dans la charpente de bois, il s’assurait de la qualité, le recrutement, la planification et l’ordonnancement, les services-conseils et d’autres services à l’industrie de la construction. Il s’est joint à Construction Nordo en 2021 à titre d’associé et de directeur des opérations. Lors de son parcours Dominic a joué un rôle clé dans l’exécution de plusieurs projet résidentiel de construction pour les plus grands bâtisseur de maison neuve au Québec."
@@ -34,46 +34,60 @@
       },
       "content_4": "La maison de vos rêves sans tracas",
       "content_5": "Imaginez la maison de vos rêves. Enfin, vous avez de l’espace pour recevoir la parenté, les enfants ont chacun leur chambre, vous avez une piscine et, finalement, vos voitures entrent dans le garage.",
-      "content_6": "Construction Nordo inc vous offre la tranquillité d’esprit avec toutes achat. Nous offrons la Garantie Maison neuve GCR sur toutes nos nouvelle construction."
+      "content_6": "Construction Nordo inc vous offre la tranquillité d’esprit avec toutes achat. Nous offrons la Garantie Maison neuve GCR sur toutes nos nouvelle construction.",
+      "about": {
+        "Design_title": "Design d'intérieur",
+        "Design_Content": "Nous développons le cycle complet de la documentation du projet et tous les détails. La satisfaction de nos clients est la plus importante",
+        "Architecture_title": "Architecture ",
+        "Architecture_Content": "Construction Nordo et ses partenaires peuvent concevoir votre architecture selon vos besoin sur mesure ",
+        "Planning_title": "Plan de maison abordable ",
+        "Planning_Content": "Nous vous offrons la possibilité de choisir un plan de maison selon une collection"
+      }
     },
-    "Project" : {
-      "See_Content" : "VOIR LA GRANDEUR DES PIÈCES ET HAUTEUR DES PLAFONDS",
-      "Basement" : "Sous-sol",
-      "Ground_floor" : "Rez-de-chaussée",
-      "Pieces" : "Pièces",
-      "Dimensions" : "Dimensions",
-      "Ceiling" : "Plafond",
-      "list" : {
+    "Project": {
+      "See_Content": "VOIR LA GRANDEUR DES PIÈCES ET HAUTEUR DES PLAFONDS",
+      "Basement": "Sous-sol",
+      "Ground_floor": "Rez-de-chaussée",
+      "Pieces": "Pièces",
+      "Dimensions": "Dimensions",
+      "Ceiling": "Plafond",
+      "list": {
         "mechanical": "Pièce de mécanique",
         "Bedroom": "Chambre à coucher",
-        "Wardrobe": "Garde-robe", 
+        "Wardrobe": "Garde-robe",
         "laundry room": "Buanderie",
         "lot": "Îlot",
         "Storage": "Stockage",
         "Lingerie": "Lingerie",
-        "Shower": "Douche", 
-        "Family room": "La salle a manger", 
+        "Shower": "Douche",
+        "Family room": "La salle a manger",
         "Perron": "Perron",
         "Sheltered-steps": "Marches abritées",
         "dining room": "salle à manger",
         "Î lot": "Î lot",
-        "Food":"Nourriture",
+        "Food": "Nourriture",
         "Pantry": "Garde-manger",
         "Entrance": "Entrée",
         "Changing room": "Cabine d'essayage",
         "walk-in": "Walk-in",
         "living room": "salon",
-        "Bathroom" : "Salle de douche",
-        "Sheltered-terrace":"Terrasse couverte",
+        "Bathroom": "Salle de douche",
+        "Sheltered-terrace": "Terrasse couverte",
         "Sector-activities": "Activités sectorielles"
-    }
-  },
+      }
+    },
     "Contact": {
       "content_1": "Vous avez des questions? Découvrez comment Construction Nordo peut vous aider à réaliser vos projets d’agrandissement ou ",
-      "send": "Envoyer le message"
+      "send": "Envoyer le message",
+      "name": "Nom",
+      "subject": "Sujet",
+      "message": "Message",
+      "phone": "téléphone",
+      "partner": "Associé",
+      "email": "Courriel"
     },
     "footer": {
-        "followus" : "SUIVEZ-NOUS"
+      "followus": "SUIVEZ-NOUS"
     }
   }
 }

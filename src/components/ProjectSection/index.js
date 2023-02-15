@@ -2,9 +2,9 @@ import React from "react";
 import { withTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-import projectImg1 from "../../img/project-1.png";
+import projectImg1 from "../../img/project-4.jpg";
 import projectImg2 from "../../img/project-2.png";
-import projectImg3 from "../../img/project-3.png";
+import projectImg3 from "../../img/project-5.jpg";
 
 import "./style.css";
 
@@ -19,13 +19,13 @@ const ProjectSection = ({ t }) => {
               <h2 className="section-title">Featured Work.</h2>
             </div>
             <div className="project-box" data-aos="fade-up">
-              <Link to="/projects-single">
-                <img src={projectImg1} alt="img" />
-                <h3>
+              <Link to="/projects/1/#header_p">
+                <img src={projectImg1} alt="img" width={`100%`} height={`50%`}/>
+                {/* <h3>
                   CONCERT HALL
                   <br /> IN NEW WORK
                 </h3>
-                <p>INTERIOR</p>
+                <p>INTERIOR</p> */}
                 <div className="project-zoom">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,19 +50,19 @@ const ProjectSection = ({ t }) => {
             </div>
             <div className="text-center mt-5 d-lg-block d-none">
               <Link to="/projects" className="cta-btn btn-fill">
-                See Projects
+                {t("Home.seeproject")}
               </Link>
             </div>
           </div>
           <div className="col-sm-6">
             <div className="project-box" data-aos="fade-up">
-              <Link to="/projects-single">
-                <img src={projectImg3} alt="img" />
-                <h3>
+              <Link to="/projects/2/#-">
+                <img src={projectImg3} alt="img" width={`100%`} height={`50%`}/>
+                {/* <h3>
                   MODERN LIVING
                   <br /> ROOM
                 </h3>
-                <p>INTERIOR</p>
+                <p>INTERIOR</p> */}
                 <div className="project-zoom">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -86,13 +86,13 @@ const ProjectSection = ({ t }) => {
               </Link>
             </div>
             <div className="project-box" data-aos="fade-up">
-              <Link to="/projects-single">
-                <img src={projectImg2} alt="img" />
-                <h3>
+              <Link to="/projects/">
+                <img src={projectImg2} alt="img" width={`100%`} height={`50%`}/>
+                {/* <h3>
                   MODERN HOTEL
                   <br /> IN AUSTRALIA
                 </h3>
-                <p>ARCHITECTURE</p>
+                <p>ARCHITECTURE</p> */}
                 <div className="project-zoom">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

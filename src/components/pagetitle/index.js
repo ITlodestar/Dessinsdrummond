@@ -11,31 +11,7 @@ const PageTitle = (props) => {
       className="breadcrumb-area"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="hero-social">
-        <ul>
-          <li>
-            <Link to="/">
-              <i className="fab fa-pinterest-p" />
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <i className="fab fa-facebook-f" />
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <i className="fab fa-instagram" />
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <i className="fab fa-twitter" />
-            </Link>
-          </li>
-        </ul>
-        <p>{props.t(`footer.followus`)} </p>
-      </div>
+      
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

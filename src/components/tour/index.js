@@ -1,5 +1,4 @@
 import React from "react";
-import VideoModal from "../../components/ModalVideo";
 
 import tourBG from "../../img/tour-img.png";
 
@@ -30,7 +29,6 @@ const Tour = () => {
                       <div className="waves wave-3" />
                     </div>
                   </div>
-                  <VideoModal videoId="BqI0Q7e4kbk" />
                 </div>
               </div>
             </div>

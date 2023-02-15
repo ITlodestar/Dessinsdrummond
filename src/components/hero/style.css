@@ -301,6 +301,7 @@
 	.sub-title {
 		letter-spacing: 3px;
 		font-size: 20px;
+		text-transform: uppercase;
 	}
 	.hero-social p {
 		display: none;

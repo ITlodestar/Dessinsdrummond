@@ -17,7 +17,7 @@ const About = ({ t }) => {
           <div className="col-lg-5 col-md-6">
             <div className="about-left" data-aos="fade-right">
               <div className="site-heading">
-                <h3 className="sub-title">ABOUT US</h3> 
+                <h3 className="sub-title">{t('Header.Aboutus')}</h3> 
               </div>
               <p>{t('Home.about_1')}</p>
               <p>{t('Home.about_2')}</p>
@@ -34,43 +34,7 @@ const About = ({ t }) => {
             </div>
           </div>
           <div className="col-lg-6 offset-lg-1 col-md-6">
-            <div className="about-counter">
-              <div className="counter-box">
-                <h2>
-                  <span className="counter">
-                    <CountUp start={0} end={105} duration={5} />
-                  </span>
-                </h2>
-                <p>
-                  Years of <br />
-                  experience
-                </p>
-              </div>
-              <div className="counter-box">
-                <h2>
-                  <span className="counter">
-                    <CountUp start={0} end={436} duration={8} />
-                  </span>
-                  +
-                </h2>
-                <p>
-                  Projects <br />
-                  Completed
-                </p>
-              </div>
-              <div className="counter-box">
-                <h2>
-                  <span className="counter">
-                    <CountUp start={0} end={180} duration={5} />
-                  </span>
-                  +
-                </h2>
-                <p>
-                  Awards <br />
-                  Winning
-                </p>
-              </div>
-            </div>
+          
             <div className="about-right" data-aos="fade-left">
               <img className="about_img_1" src={img2} alt="img" />
               <img className="about_img_2" src={img1} alt="img" />

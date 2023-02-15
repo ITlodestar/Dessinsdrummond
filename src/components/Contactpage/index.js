@@ -18,7 +18,7 @@ const Contactpage = ({ t }) => {
               <ContactForm />
             </div>
           </div>
-          <div className="col-lg-5 col-sm-6">
+          <div className="col-12  ">
             <div className="contact-page-left">
               <h3>Contact info</h3>
               <div className="contact-info">
@@ -40,10 +40,10 @@ const Contactpage = ({ t }) => {
                     <span className="fas fa-phone-alt" />
                   </div>
                   <div className="contact-info-text">
-                    <h5>Phone</h5>
-                    <p>Simon B é dard, Partner</p>
+                    <h5>{t("Contact.phone")}</h5>
+                    <p>Simon B é dard, {t("Contact.partner")}</p>
                     <p>514-927-1549 </p>
-                    <p>Dominic Massaro, Partner</p>
+                    <p>Dominic Massaro, {t("Contact.partner")}</p>
                     <p>514-927-1519 </p>  
                   </div>
                 </div>
@@ -52,7 +52,7 @@ const Contactpage = ({ t }) => {
                     <span className="fas fa-envelope" />
                   </div>
                   <div className="contact-info-text">
-                    <h5>Email</h5>
+                    <h5>{t("Contact.email")}</h5>
                     <p>info@company.com</p>
                     <p>support@company.com</p>
                   </div>
@@ -60,14 +60,7 @@ const Contactpage = ({ t }) => {
               </div>
             </div>
           </div>
-          <div className="col-lg-7 col-sm-6">
-            <div className="contact-page-right">
-              <iframe
-                title="map"
-                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d555482.3711026354!2d55.086876101283096!3d24.842777577980748!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1629183603415!5m2!1sen!2sbd"
-              ></iframe>
-            </div>
-          </div>
+           
         </div>
       </div>
     </section>

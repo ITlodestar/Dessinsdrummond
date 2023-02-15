@@ -1,4 +1,5 @@
 import React from "react";
+import { withTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import serviceImg1 from "../../img/service-bg-1.png";
@@ -10,7 +11,7 @@ import serviceIcon3 from "../../img/service-icon-3.png";
 
 import "./style.css";
 
-const ServiceSection = () => {
+const ServiceSection = ({ t }) => {
   return (
     <section className="service-area">
       <div className="container">
@@ -25,10 +26,8 @@ const ServiceSection = () => {
                 <img src={serviceIcon1} alt="img" />
               </div>
               <div className="service-text">
-                <h3>Interior Design</h3>
-                <p>
-                  We develop the full cycle of project documentation &amp; full
-                  details. Our clients satisfaction is most
+                <h3>{t('Services.about.Design_title')}</h3>
+                <p> {t('Services.about.Design_Content')}
                 </p>
                 <Link to="/service-single" className="cta-btn btn-border">
                   Read More
@@ -47,10 +46,9 @@ const ServiceSection = () => {
                 <img src={serviceIcon2} alt="img" />
               </div>
               <div className="service-text">
-                <h3>Architecture</h3>
+                <h3>{t('Services.about.Architecture_title')}</h3>
                 <p>
-                  We develop the full cycle of project documentation &amp; full
-                  details. Our clients satisfaction is most
+                {t('Services.about.Architecture_Content')}
                 </p>
                 <Link to="/service-single" className="cta-btn btn-border">
                   Read More
@@ -69,10 +67,9 @@ const ServiceSection = () => {
                 <img src={serviceIcon3} alt="img" />
               </div>
               <div className="service-text">
-                <h3>House Planning</h3>
+                <h3>{t('Services.about.Planning_title')}</h3>
                 <p>
-                  We develop the full cycle of project documentation &amp; full
-                  details. Our clients satisfaction is most
+                {t('Services.about.Planning_Content')}
                 </p>
                 <Link to="/service-single" className="cta-btn btn-border">
                   Read More
@@ -87,4 +84,4 @@ const ServiceSection = () => {
   );
 };
 
-export default ServiceSection;
+export default withTranslation()(ServiceSection);

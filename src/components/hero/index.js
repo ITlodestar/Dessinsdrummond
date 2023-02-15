@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
-import VideoModal from "../../components/ModalVideo";
+import { Link } from "react-router-dom"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -38,32 +37,7 @@ class Hero extends Component {
 
     return (
       <section className="hero-area">
-        <div className="hero-social">
-          <ul>
-            <li>
-              <Link to="/">
-                <i className="fab fa-pinterest-p" />
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <i className="fab fa-facebook-f" />
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <i className="fab fa-instagram" />
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <i className="fab fa-twitter" />
-              </Link>
-            </li>
-          </ul>
-          <p>{ this.props.t("footer.followus")  }</p>
-        </div>
-
+         
         <div className="hero-slider">
           <div className="hero_arrows">
             <button className="button" onClick={this.previous}>
@@ -94,16 +68,7 @@ class Hero extends Component {
                       </Link>
                     </div>
                   </div>
-                  <div className="video-main">
-                    <div className="promo-video">
-                      <div className="waves-block">
-                        <div className="waves wave-1" />
-                        <div className="waves wave-2" />
-                        <div className="waves wave-3" />
-                      </div>
-                    </div>
-                    <VideoModal videoId="BqI0Q7e4kbk" />
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -126,17 +91,7 @@ class Hero extends Component {
                         Get Contact
                       </Link>
                     </div>
-                  </div>
-                  <div className="video-main">
-                    <div className="promo-video">
-                      <div className="waves-block">
-                        <div className="waves wave-1" />
-                        <div className="waves wave-2" />
-                        <div className="waves wave-3" />
-                      </div>
-                    </div>
-                    <VideoModal videoId="WVPfu1yOOko" />
-                  </div>
+                  </div> 
                 </div>
               </div>
             </div>

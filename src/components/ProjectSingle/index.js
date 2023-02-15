@@ -19,7 +19,7 @@ const ProjectSingle = (props) => {
           <div className="col-lg-12">
             <div className="project-details-top">
               <div className="project-details-top-img">
-                <img src={ProjectId == 1 ? Img1 : Img2} alt="img" />
+                <img id="header_p" src={ProjectId == 1 ? Img1 : Img2} alt="img" />
               </div>
               <div className="project-details-top-box">
                 <h3>Project Details</h3>

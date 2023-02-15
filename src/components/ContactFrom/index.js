@@ -5,7 +5,7 @@ class ContactForm extends Component {
   state = {
     name: "",
     email: "",
-    subject: "", 
+    subject: "",
     events: "",
     notes: "",
     error: {},
@@ -24,7 +24,7 @@ class ContactForm extends Component {
   subimtHandler = (e) => {
     e.preventDefault();
 
-    const { name, email, subject,  events, notes, error } = this.state;
+    const { name, email, subject, events, notes, error } = this.state;
 
     if (name === "") {
       error.name = "Please enter your name";
@@ -67,7 +67,7 @@ class ContactForm extends Component {
   };
 
   render() {
-    const { name, email, subject,  error } = this.state;
+    const { name, email, subject, error } = this.state;
 
     return (
       <form onSubmit={this.subimtHandler} className="form">
@@ -79,11 +79,11 @@ class ContactForm extends Component {
                 onChange={this.changeHandler}
                 type="text"
                 name="name"
-                placeholder="Name"
+                placeholder={this.props.t("Contact.name")}
               />
               <p>{error.name ? error.name : ""}</p>
             </div>
-          </div> 
+          </div>
           <div className="col-lg-6 col-sm-6">
             <div className="form-field">
               <input
@@ -91,7 +91,7 @@ class ContactForm extends Component {
                 value={email}
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={this.props.t("Contact.email")}
               />
               <p>{error.email ? error.email : ""}</p>
             </div>
@@ -103,14 +103,17 @@ class ContactForm extends Component {
                 value={subject}
                 type="text"
                 name="subject"
-                placeholder="Subject"
+                placeholder={this.props.t("Contact.subject")}
               />
               <p>{error.subject ? error.subject : ""}</p>
             </div>
           </div>
           <div className="col-lg-12 col-sm-12">
             <div className="form-field">
-              <textarea name="message" placeholder="Message"></textarea>
+              <textarea
+                name="message"
+                placeholder={this.props.t("Contact.message")}>
+              </textarea>
             </div>
           </div>
           <div className="col-lg-12">

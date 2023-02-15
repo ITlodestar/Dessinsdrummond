@@ -217,6 +217,7 @@ section {
 	font-weight: 500;
 	margin-bottom: 10px;
 	font-size: 24px;
+	text-transform: uppercase;
 }
 
 .section-title {
@@ -250,6 +251,7 @@ section {
 	.sub-title {
 		letter-spacing: 3px;
 		font-size: 20px;
+		text-transform: uppercase;
 	}
 	p {
 		font-size: 16px;
