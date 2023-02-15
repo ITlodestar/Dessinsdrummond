@@ -14,10 +14,7 @@ const AboutPage =() => {
         <Fragment>
             <Header/>
             <PageTitle pageTitle={'Aboutus'} pagesub={'About'}/>
-            <Feature/>
-            <Partners/>
-            <Expertise/>
-            <Team/>
+            <Feature/> 
             <Footer/>
         </Fragment>
     )
