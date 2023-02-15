@@ -9,7 +9,7 @@ import "./style.css";
 
 const ProjectList = ({ t }) => {
   return (
-    <section className="projects-area projects-page-area">
+    <section className="projects-area  ">
       <div className="container">
         <div className="row">
           <div className="col-md-12 mx-auto">
@@ -25,7 +25,7 @@ const ProjectList = ({ t }) => {
               <div className="col-md-5  col-sm-6">
                 <div className="project-box">
                   <Link to="/projects/1">
-                    <img src={projectImg1} alt="img" width={`100%`}/>
+                    <img src={projectImg1} alt="img" width={`100%`} height = {`100%`}/>
                     <h3>
                     Saint-Ad è le 
                       <br />  Burlintong
@@ -56,7 +56,7 @@ const ProjectList = ({ t }) => {
               <div className="col-md-5 col-sm-6">
                 <div className="project-box">
                   <Link to="/projects/2">
-                    <img src={projectImg2} alt="img" width={`100%`} />
+                    <img src={projectImg2} alt="img" width={`100%`} height = {`100%`}/>
                     <h3>
                     Saint-Ad è le
                       <br /> Scandinave
