@@ -72,9 +72,7 @@ const Header = (props) => {
                     <a className="dropdown-item" href="#"onClick={() => ChangeLang('en')}>En</a> 
                   </div>
                 </div>
-                <button className="search-toggle" onClick={() => setShow(true)}>
-                  <i className="fa fa-search"></i>
-                </button>
+                
                 <Link to="/contact" className="header-btn">
                   <div className="icon-holder">
                     <i className="far fa-envelope"></i>
