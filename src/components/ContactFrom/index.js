@@ -28,6 +28,7 @@ class ContactForm extends Component {
 
     if (name === "") {
       error.name = "Please enter your name";
+       
     }
     if (email === "") {
       error.email = "Please enter your email";
@@ -46,7 +47,7 @@ class ContactForm extends Component {
       this.setState({
         error,
       });
-    }
+    } 
     if (
       error.name === "" &&
       error.email === "" &&
@@ -63,7 +64,8 @@ class ContactForm extends Component {
         notes: "",
         error: {},
       });
-    }
+    } 
+    window.location.href = '/Successcontact';
   };
 
   render() {
@@ -80,6 +82,7 @@ class ContactForm extends Component {
                 type="text"
                 name="name"
                 placeholder={this.props.t("Contact.name")}
+                required
               />
               <p>{error.name ? error.name : ""}</p>
             </div>
@@ -92,6 +95,7 @@ class ContactForm extends Component {
                 type="email"
                 name="email"
                 placeholder={this.props.t("Contact.email")}
+                required
               />
               <p>{error.email ? error.email : ""}</p>
             </div>
@@ -104,6 +108,7 @@ class ContactForm extends Component {
                 type="text"
                 name="subject"
                 placeholder={this.props.t("Contact.subject")}
+                required
               />
               <p>{error.subject ? error.subject : ""}</p>
             </div>
@@ -112,7 +117,8 @@ class ContactForm extends Component {
             <div className="form-field">
               <textarea
                 name="message"
-                placeholder={this.props.t("Contact.message")}>
+                placeholder={this.props.t("Contact.message")}
+                required>
               </textarea>
             </div>
           </div>

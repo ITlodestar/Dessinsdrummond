@@ -86,8 +86,10 @@
       "partner": "Associé",
       "email": "Courriel"
     },
+    "SuccessFull" : "Nous avons reçu votre demande.",
     "footer": {
-      "followus": "SUIVEZ-NOUS"
+      "followus": "SUIVEZ-NOUS",
+      "about" : "À PROPOS"
     }
   }
 }

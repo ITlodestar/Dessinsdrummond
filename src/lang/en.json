@@ -87,8 +87,10 @@
             "partner": "Partner",
             "email": "Email"
         },
+        "SuccessFull" : "We have received your request.",
         "footer": {
-            "followus": "Follow US"
+            "followus": "Follow US",
+            "about" : "About"
         }
     }
 }

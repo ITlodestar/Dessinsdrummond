@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 
 import Img1 from "../../img/project-details1.jpg";
 import Img2 from "../../img/project-details2.jpg";
+import Img6 from "../../img/bedroom.jpg";
+import Img7 from "../../img/hallroom.jpg";
+import Img8 from "../../img/kitchen.jpg";
 
 import { withTranslation } from 'react-i18next';
 import Content from './tableContent.json';
@@ -123,6 +126,58 @@ const ProjectSingle = (props) => {
                   }
                 </tbody>
               </table>
+            </div>
+            <div className="project-details-type">
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="details-box">
+                    <div className="project-box project-details-box">
+                      <img src={Img6} alt="img" />
+                      <p>BEDROOM</p>
+                    </div>
+                    <div className="project-details-box-meta-text">
+                      <p>
+                        Many desktop publishing packages and web page editors
+                        now use Lorem Ipsum as their default model text, and a
+                        search for 'lorem ipsum'
+                      </p>
+                      <Link to="/">Learn More</Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="details-box">
+                    <div className="project-box project-details-box">
+                      <img src={Img7} alt="img" />
+                      <p>HALLROOM</p>
+                    </div>
+                    <div className="project-details-box-meta-text">
+                      <p>
+                        Many desktop publishing packages and web page editors
+                        now use Lorem Ipsum as their default model text, and a
+                        search for 'lorem ipsum'
+                      </p>
+                      <Link to="/">Learn More</Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="details-box">
+                    <div className="project-box project-details-box">
+                      <img src={Img8} alt="img" />
+                      <p>KITCHEN</p>
+                    </div>
+                    <div className="project-details-box-meta-text">
+                      <p>
+                        Many desktop publishing packages and web page editors
+                        now use Lorem Ipsum as their default model text, and a
+                        search for 'lorem ipsum'
+                      </p>
+                      <Link to="/">Learn More</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

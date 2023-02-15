@@ -1,9 +1,10 @@
 import React from "react";
+import { withTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import "./style.css";
 
-const Footer = () => {
+const Footer = ({ t }) => {
   const NewsletterHandler = (e) => {
     e.preventDefault();
   };
@@ -15,7 +16,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-4 col-sm-6 order-lg-1 order-1">
               <div className="single-footer">
-                <h3>About</h3>
+                <h3>{t("footer.about") }</h3>
                 <p>
                   Precious ipsum dolor sit amet consectetur
                   <br /> adipisicing elit, sed dos mod tempor
@@ -51,4 +52,4 @@ const Footer = () => {
     </footer>
   );
 };
-export default Footer;
+export default withTranslation()(Footer);

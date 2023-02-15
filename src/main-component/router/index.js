@@ -14,7 +14,7 @@ import ContactPage from '../ContactPage'
 import ErrorPage from '../ErrorPage'
 import BlogPage from '../BlogPage'
 import BlogSinglePage from '../BlogSinglePage'
-
+import Successcontact from "../Successcontact";
       
 
 const AllRoute = () => { 
@@ -36,6 +36,7 @@ const AllRoute = () => {
             <Route path='/contact' component={ContactPage} />
             <Route path='/404' component={ErrorPage} />
             <Route path='/blog' component={BlogPage} />
+            <Route path='/Successcontact' component={Successcontact} />
             <Route path='/blog-single' component={BlogSinglePage} />
           </Switch>
       </Router>

@@ -22,8 +22,7 @@ const PageTitle = (props) => {
                   <Link to="/">
                     <span className="fas fa-home" />
                   </Link>
-                </li>
-                <li>{props.pagesub}</li>
+                </li> 
               </ul>
             </div>
           </div>
