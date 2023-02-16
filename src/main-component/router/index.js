@@ -36,7 +36,7 @@ const AllRoute = () => {
             <Route path='/contact' component={ContactPage} />
             <Route path='/404' component={ErrorPage} />
             <Route path='/blog' component={BlogPage} />
-            <Route path='/Successcontact' component={Successcontact} />
+            <Route path='/successcontact' component={Successcontact} />
             <Route path='/blog-single' component={BlogSinglePage} />
           </Switch>
       </Router>

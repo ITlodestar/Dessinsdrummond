@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { withTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+
 
 class ContactForm extends Component {
   state = {
     name: "",
     email: "",
     subject: "",
-    events: "",
-    notes: "",
+    message: "",
     error: {},
   };
 
@@ -23,12 +24,11 @@ class ContactForm extends Component {
 
   subimtHandler = (e) => {
     e.preventDefault();
-
-    const { name, email, subject, events, notes, error } = this.state;
+    const { name, email, subject, message, error } = this.state;
 
     if (name === "") {
       error.name = "Please enter your name";
-       
+
     }
     if (email === "") {
       error.email = "Please enter your email";
@@ -36,43 +36,24 @@ class ContactForm extends Component {
     if (subject === "") {
       error.subject = "Please enter your subject";
     }
-    if (events === "") {
-      error.events = "Select your event list";
+    if (message === "") {
+      error.message = "Select your event list";
     }
-    if (notes === "") {
-      error.notes = "Please enter your note";
-    }
-
+    console.log(error);
     if (error) {
       this.setState({
         error,
       });
-    } 
-    if (
-      error.name === "" &&
-      error.email === "" &&
-      error.email === "" &&
-      error.subject === "" &&
-      error.events === "" &&
-      error.notes === ""
-    ) {
-      this.setState({
-        name: "",
-        email: "",
-        subject: "",
-        events: "",
-        notes: "",
-        error: {},
-      });
-    } 
-    window.location.href = '/Successcontact';
+    }
+
+    // window.location.href = '/successcontact';
   };
 
   render() {
-    const { name, email, subject, error } = this.state;
-
+    const { name, email, subject, error, message } = this.state;
+    console.log(error);
     return (
-      <form onSubmit={this.subimtHandler} className="form">
+      <form onSubmit={this.subimtHandler} className="form" >
         <div className="row">
           <div className="col-lg-6 col-sm-6">
             <div className="form-field">
@@ -117,6 +98,8 @@ class ContactForm extends Component {
             <div className="form-field">
               <textarea
                 name="message"
+                value={message}
+                onChange={this.changeHandler}
                 placeholder={this.props.t("Contact.message")}
                 required>
               </textarea>
@@ -124,9 +107,12 @@ class ContactForm extends Component {
           </div>
           <div className="col-lg-12">
             <div className="contact-form-action">
-              <button className="form-button" type="submit">
-                {this.props.t("Contact.send")}
-              </button>
+              {error.name !== "" || error.subject !== "" || error.email !== "" || error.message !== "" ?
+                <button className="form-button" type="submit">{this.props.t("Contact.send")} </button> :
+                <Link to={"/successcontact"}>
+                  <button className="form-button" type="submit">{this.props.t("Contact.send")}
+                  </button>
+                </Link>}
             </div>
           </div>
         </div>
