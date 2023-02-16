@@ -39,7 +39,7 @@ class ContactForm extends Component {
     if (message === "") {
       error.message = "Select your event list";
     }
-    console.log(error);
+ 
     if (error) {
       this.setState({
         error,
@@ -51,7 +51,7 @@ class ContactForm extends Component {
 
   render() {
     const { name, email, subject, error, message } = this.state;
-    console.log(error);
+ 
     return (
       <form onSubmit={this.subimtHandler} className="form" >
         <div className="row">
